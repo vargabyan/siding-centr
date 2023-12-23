@@ -1,0 +1,412 @@
+@import '/fonts/stylesheet.css';
+
+:root {
+}
+
+body {
+    font-family: "HelveticaNeueCyr", Helvetica, Arial, sans-serif !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background: unset;
+    cursor: pointer;
+}
+
+.btn-red {
+    display: flex;
+    height: 52px;
+    padding: 21px 46px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #AE0E30;
+    width: max-content;
+    text-decoration: none;
+    white-space: nowrap;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-black {
+    display: flex;
+    width: 152px;
+    height: 38px;
+    padding: 21px 24px;
+    justify-content: center;
+    align-items: center;
+    background: #303030;
+    white-space: nowrap;
+
+    color: #FFF;
+    font-size: 14px;
+}
+
+.container {
+    /*width: 1170px;*/
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+
+
+.about-us {
+    display: flex;
+    gap: 46px;
+    margin-top: 50px;
+}
+
+.about-us_text-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.about-us_text-content {
+    color: #68687D;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.about-us_btn-go-to-catalog {
+}
+
+.about-us_video-wrapper {
+    max-width: 445px;
+    width: 100%;
+    max-height: 247px;
+}
+
+.about-us_video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.the-numbers-speak {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.the-numbers-speak_header {
+    display: none;
+}
+
+.the-numbers-speak_top-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.the-numbers-speak_top-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #AE0E30;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.the-numbers-speak_top-item span {
+    color: #68687D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.the-numbers-speak_top-item span br {
+    display: none;
+}
+
+.the-numbers-speak_line-separator {
+    width: 100%;
+    background: #DBDBDB;
+}
+
+.the-numbers-speak_bottom-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.the-numbers-speak_bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 12px;
+    color: #303030;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.the-numbers-speak_bottom-item span {
+    color: #68687D;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.sell-products {
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    margin-top: 80px;
+}
+
+.sell-products_header {
+}
+
+.sell-products_items-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.sell-products_left-items-wrapper {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sell-products_item-content {
+    max-width: 436px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.sell-products_item-content.close {
+    height: 40px;
+}
+
+.sell-products_item {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 19px;
+    background: #E8EDF0;
+    color: #68687D;
+    font-size: 14px;
+    line-height: 20px;
+    height: max-content;
+}
+
+.sell-products_toggle-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 32px;
+    border-radius: 50%;
+    background: #AE0E30;
+}
+
+.sell-products_toggle-hidden:after {
+    width: 15px;
+    height: 15px;
+    display: block;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M0.691406 8.00012H15.3068' stroke='%23E8EDF0' stroke-width='3'/%3E%3Cpath d='M8 0.692383L8 15.3078' stroke='%23E8EDF0' stroke-width='3'/%3E%3C/svg%3E");
+}
+
+.sell-products_toggle-hidden.close:after {
+    transform: rotate(45deg);
+}
+
+.sell-products_item_btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #68687D;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.sell-products_Submit-your-application {
+    width: 152px;
+    height: 38px;
+    padding: 21px 24px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us_video-wrapper {
+        max-width: 100%;
+        width: 100%;
+        height: 270px;
+    }
+
+    .about-us_video {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+
+    .the-numbers-speak_top-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .the-numbers-speak_bottom-wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .sell-products_items-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sell-products_left-items-wrapper {
+        max-width: 100%;
+    }
+
+    .sell-products_item-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .container {
+        max-width: 320px;
+        padding: 0;
+    }
+
+    .about-us_header {
+        font-size: 18px;
+    }
+
+    .about-us {
+        display: flex;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .about-us_text-wrapper {
+        gap: 40px;
+    }
+
+    .about-us_text-content {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .about-us_btn-go-to-catalog {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .the-numbers-speak {
+        gap: 28px;
+        margin-top: 60px;
+    }
+
+    .the-numbers-speak_header {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .the-numbers-speak_top-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .the-numbers-speak_top-item {
+        align-items: flex-start;
+        font-size: 36px;
+    }
+
+    .the-numbers-speak_top-item span {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    .the-numbers-speak_top-item span br {
+        display: block;
+    }
+
+    .the-numbers-speak_bottom-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+
+    .the-numbers-speak_bottom-item {
+        align-items: flex-start;
+        font-size: 24px;
+    }
+
+    .the-numbers-speak_bottom-item span {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: left;
+
+    }
+
+
+
+    .sell-products_header {
+        font-size: 18px;
+    }
+
+    .sell-products_item-content.close {
+        height: 80px;
+    }
+
+    .sell-products_item {
+        padding: 18px;
+    }
+}
