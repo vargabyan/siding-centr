@@ -138,7 +138,8 @@ button {
 
 .the-numbers-speak_line-separator {
     width: 100%;
-    background: #DBDBDB;
+    border: none;
+    border-bottom: solid #DBDBDB 1px;
 }
 
 .the-numbers-speak_bottom-wrapper {
@@ -259,7 +260,7 @@ button {
 .our-services {
     margin-top: 80px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(clamp(320px, 44vw, 525px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(clamp(290px, 44vw, 525px), 1fr));
     column-gap: 30px;
     row-gap: 94px;
 }
@@ -334,20 +335,227 @@ button {
     object-fit: cover;
 }
 
+.vacancies_header {
+    color: #303030;
+    font-size: 36px;
+}
+
+.vacancies-filter {
+    margin-top: 33px;
+    display: flex;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.vacancies-filter_btn {
+    height: 46px;
+    display: flex;
+    padding: 13px 23px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.vacancies-filter_label {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    position: relative;
+}
+
+.vacancies-filter_label:after {
+    position: absolute;
+    cursor: pointer;
+    right: 11px;
+    top: 11px;
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1142_430)'%3E%3Cpath d='M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z' fill='%23AE0E30'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1142_430'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.vacancies-filter_input {
+    width: 100%;
+    padding: 20px 15px;
+    border: 1px solid #DBDBDB;
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 
+.vacancies_item-wrapper {
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.vacancies_item {
+    padding: 32px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.vacancies_item_status {
+    width: max-content;
+    height: 32px;
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F1F1F1;
+    color: #444;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.vacancies_item_job-title {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 152px;
+    row-gap: 22px;
+}
+
+.vacancies_item_job-title-item {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #303030;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.vacancies_item_job-title-item span {
+    color: #68687D;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.vacancies_item_job-title-item:nth-child(2) {
+    color: #AE0E30;
+}
+
+.vacancies_item_dividing-line {
+    width: 100%;
+    border: none;
+    border-bottom: solid #DBDBDB 1px;
+}
+
+.vacancies_item_obligation-wrapper {
+    margin-top: 33px;
+    display: grid;
+    column-gap: 46px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(290px, 28vw, 404px), max-content));
+    overflow: hidden;
+    height: 150px;
+}
+
+.vacancies_item_obligation-wrapper.close {
+    height: 100%;
+}
+
+.vacancies_item_obligation {
+    width: 100%;
+    max-width: 404px;
+}
+
+.vacancies_item_obligation_header {
+    color: #68687D;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.vacancies_item_obligation_item-wrapper {
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vacancies_item_obligation-item {
+    color: #68687D;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px
+}
+
+.vacancies_item_btn-wrapper {
+    margin-top: 15px;
+    display: flex;
+    gap: 21px;
+}
+
+.vacancies_item_btn-hidden {
+    display: flex;
+    width: 165px;
+    height: 52px;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    background: #F1F1F1;
+}
+
+.vacancies_item_btn-hidden.close {
+    display: none;
+}
+
+.vacancies_item_btn-send-cv {
+}
 
 
+.vacancies-contacts {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 44px 47px;
+    background: #E8EDF0;
+}
 
+.vacancies-contacts_header {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31px;
+}
 
+.vacancies-contacts_item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #68687D;
+    font-size: 16px;
+    line-height: 26px;
+}
 
+.vacancies-contacts_tel,
+.vacancies-contacts_mail {
+    color: #303030;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
+.vacancies-contacts_btn-send-cv {
+    width: 238px;
+    height: 52px;
+    padding: 21px 46px;
+}
 
 
 @media (max-width: 992px) {
@@ -392,6 +600,11 @@ button {
 
     .sell-products_item-content {
         max-width: 100%;
+    }
+
+
+    .vacancies-filter {
+        flex-wrap: wrap;
     }
 }
 
@@ -519,14 +732,6 @@ button {
         font-size: 14px;
     }
 
-    .our-services_more-details:after {
-        display: block;
-        content: '';
-        width: 30px;
-        height: 7px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='8' viewBox='0 0 31 8' fill='none'%3E%3Cpath d='M30.3536 4.35356C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464468C26.9763 0.269206 26.6597 0.269206 26.4645 0.464468C26.2692 0.659731 26.2692 0.976313 26.4645 1.17158L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53554C26.6597 7.7308 26.9763 7.7308 27.1716 7.53554L30.3536 4.35356ZM-4.37114e-08 4.5L30 4.5L30 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z' fill='%23303030'/%3E%3C/svg%3E");
-    }
-
 
     .our-theme {
         margin-top: 60px;
@@ -535,5 +740,104 @@ button {
 
     .our-theme_header {
         font-size: 18px;
+    }
+
+
+    .vacancies_header {
+        font-size: 18px;
+    }
+
+    .vacancies-filter {
+        margin-top: 17px;
+    }
+
+    .vacancies-filter_btn {
+        height: 36px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .vacancies-filter_label {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        position: relative;
+    }
+
+    .vacancies-filter_label:after {
+        right: 10px;
+        top: 10px;
+        width: 16px;
+        height: 16px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg clip-path='url(%23clip0_1144_716)'%3E%3Cpath d='M10.3333 9.33333H9.80667L9.62 9.15333C10.2733 8.39333 10.6667 7.40667 10.6667 6.33333C10.6667 3.94 8.72667 2 6.33333 2C3.94 2 2 3.94 2 6.33333C2 8.72667 3.94 10.6667 6.33333 10.6667C7.40667 10.6667 8.39333 10.2733 9.15333 9.62L9.33333 9.80667V10.3333L12.6667 13.66L13.66 12.6667L10.3333 9.33333ZM6.33333 9.33333C4.67333 9.33333 3.33333 7.99333 3.33333 6.33333C3.33333 4.67333 4.67333 3.33333 6.33333 3.33333C7.99333 3.33333 9.33333 4.67333 9.33333 6.33333C9.33333 7.99333 7.99333 9.33333 6.33333 9.33333Z' fill='%23AE0E30'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1144_716'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    }
+
+    .vacancies-filter_input {
+        width: 100%;
+        padding: 16px 12px;
+        border: 1px solid #DBDBDB;
+        font-size: 12px;
+    }
+
+
+    .vacancies_item-wrapper {
+        margin-top: 39px;
+        gap: 20px;
+    }
+
+    .vacancies_item {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .vacancies_item_status {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .vacancies_item_obligation-wrapper {
+        margin-top: 0;
+    }
+
+    .vacancies_item_job-title-item {
+        font-size: 16px;
+    }
+
+    .vacancies_item_btn-wrapper {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vacancies_item_btn-hidden {
+        width: 181px;
+        height: 38px;
+        padding: 6px 12px;
+    }
+
+    .vacancies_item_btn-send-cv {
+        width: 181px;
+        height: 38px;
+    }
+
+
+    .vacancies-contacts {
+        padding: 26px;
+    }
+
+    .vacancies-contacts_header {
+        font-size: 16px;
+    }
+
+    .vacancies-contacts_tel {
+        color: #AE0E30;
+    }
+
+    .vacancies-contacts_btn-send-cv {
+        margin-top: 16px;
+        width: 181px;
+        height: 38px;
+        padding: 6px 12px;
     }
 }
