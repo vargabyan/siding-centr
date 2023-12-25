@@ -203,6 +203,7 @@ button {
 }
 
 .sell-products_item {
+    max-width: 525px;
     width: 100%;
     display: flex;
     gap: 20px;
@@ -252,6 +253,85 @@ button {
     height: 38px;
     padding: 21px 24px;
     font-size: 14px;
+}
+
+
+.our-services {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(320px, 44vw, 525px), 1fr));
+    column-gap: 30px;
+    row-gap: 94px;
+}
+
+.our-services_item {
+    max-width: 525px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border: 1px solid #DFDFDF;
+    padding: 30px;
+}
+
+.our-services_img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-height: 89px;
+    height: 100%;
+}
+
+.our-services_header {
+    margin-top: 20px;
+    color: #AE0E30;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.our-services_description {
+    color: #303030;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.our-services_more-details {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #AE0E30;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.our-services_more-details:after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 7px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='8' viewBox='0 0 31 8' fill='none'%3E%3Cpath d='M30.3536 4.35356C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464468C26.9763 0.269206 26.6597 0.269206 26.4645 0.464468C26.2692 0.659731 26.2692 0.976313 26.4645 1.17158L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53554C26.6597 7.7308 26.9763 7.7308 27.1716 7.53554L30.3536 4.35356ZM-4.37114e-08 4.5L30 4.5L30 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z' fill='%23303030'/%3E%3C/svg%3E");
+}
+
+
+.our-theme {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our-theme_header {
+    color: #303030;
+    font-size: 28px;
+}
+
+.our-theme_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -397,7 +477,6 @@ button {
     }
 
 
-
     .sell-products_header {
         font-size: 18px;
     }
@@ -408,5 +487,53 @@ button {
 
     .sell-products_item {
         padding: 18px;
+    }
+
+
+    .our-services {
+        margin-top: 60px;
+        column-gap: 0;
+        row-gap: 0;
+    }
+
+    .our-services_item {
+        gap: 21px;
+        padding: 20px;
+    }
+
+    .our-services_img {
+        height: 89px;
+    }
+
+    .our-services_header {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .our-services_description {
+        font-size: 14px;
+    }
+
+    .our-services_more-details {
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .our-services_more-details:after {
+        display: block;
+        content: '';
+        width: 30px;
+        height: 7px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='8' viewBox='0 0 31 8' fill='none'%3E%3Cpath d='M30.3536 4.35356C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464468C26.9763 0.269206 26.6597 0.269206 26.4645 0.464468C26.2692 0.659731 26.2692 0.976313 26.4645 1.17158L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53554C26.6597 7.7308 26.9763 7.7308 27.1716 7.53554L30.3536 4.35356ZM-4.37114e-08 4.5L30 4.5L30 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z' fill='%23303030'/%3E%3C/svg%3E");
+    }
+
+
+    .our-theme {
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    .our-theme_header {
+        font-size: 18px;
     }
 }
