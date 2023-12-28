@@ -12,7 +12,7 @@
 
 <main class="container">
 
-    <h1 class="about-us_header">О компании</h1>
+    <h1 class="site_header">О компании</h1>
 
     <section class="about-us">
         <div class="about-us_text-wrapper">

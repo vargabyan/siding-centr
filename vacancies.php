@@ -11,7 +11,7 @@
 <body>
 
 <main class="container">
-    <h1 class="vacancies_header">Вакансии</h1>
+    <h1 class="site_header">Вакансии</h1>
 
     <section class="vacancies-filter">
         <a class="vacancies-filter_btn" href="">Офисные работники</a>
@@ -52,7 +52,7 @@
                     <?php } ?>
                 </div>
                 <div class="vacancies_item_btn-wrapper">
-                    <button class="vacancies_item_btn-hidden" data-vacancies-item-btn-hidden>Развернуть</button>
+                    <button class="vacancies_item_btn-hidden btn-grey" data-vacancies-item-btn-hidden>Развернуть</button>
                     <button class="vacancies_item_btn-send-cv btn-red">Отправить резюме</button>
                 </div>
             </div>
