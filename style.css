@@ -954,6 +954,10 @@ button {
     border-bottom: 1px solid #E5E5E5;
 }
 
+.product-cards .product-cards_vendor-code {
+    display: none;
+}
+
 .product-cards_characteristic_header {
     color: #303030;
     font-size: 14px;
@@ -2120,6 +2124,10 @@ button {
     .product-cards_characteristic-wrapper {
         gap: 20px;
         padding: 22px;
+    }
+
+    .product-cards .product-cards_vendor-code {
+        display: block;
     }
 
     .product-cards_characteristic_header {
