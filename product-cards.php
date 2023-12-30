@@ -58,7 +58,7 @@
         </div>
         <div class="product-cards_characteristic-wrapper">
             <p class="product-cards_vendor-code">Артикул товара: <span>24500000</span></p>
-            <p class="product-cards_characteristic_header">Характеристики</p>
+            <p class="product-cards_characteristic_header" id="#characteristic_view-all-specifications">Характеристики</p>
             <div class="product-cards_characteristic">
                 <p class="product-cards_characteristic_item">Длина <span
                             class="product-cards_characteristic_item-line"></span> <span
@@ -148,7 +148,7 @@
     </section>
 </div>
 
-<section class="description-and-specifications_background">
+<section class="description-and-specifications_background" id="characteristic_view-all-specifications">
     <div class="description-and-specifications_line"></div>
     <div class="description-and-specifications container" data-description-and-specifications-wrapper>
         <div class="description-and-specifications_toggle-btn-wrapper">
