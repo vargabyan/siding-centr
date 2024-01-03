@@ -2253,13 +2253,13 @@ button {
 
     .price-from-others_head_grid-line:first-child {
         justify-content: flex-start;
+        margin-left: 4px;
+        width: 100%;
     }
 
     .price-from-others_head_item {
         font-size: 10px;
         font-weight: 500;
-
-        border-right: solid 2px #E5E5E5;
     }
 
     .best-price-guarantee_price-from-others {
